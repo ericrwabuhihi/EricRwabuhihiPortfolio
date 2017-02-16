@@ -70,7 +70,32 @@
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
     <Content Include="css\creative.css" />
     <Content Include="css\creative.min.css" />
+    <Content Include="css\shCore.css" />
+    <Content Include="css\shCoreDefault.css" />
+    <Content Include="css\shCoreDjango.css" />
+    <Content Include="css\shCoreEclipse.css" />
+    <Content Include="css\shCoreEmacs.css" />
+    <Content Include="css\shCoreFadeToGrey.css" />
+    <Content Include="css\shCoreMDUltra.css" />
+    <Content Include="css\shCoreMidnight.css" />
+    <Content Include="css\shCoreRDark.css" />
+    <Content Include="css\shThemeDefault.css" />
+    <Content Include="css\shThemeDjango.css" />
+    <Content Include="css\shThemeEclipse.css" />
+    <Content Include="css\shThemeEmacs.css" />
+    <Content Include="css\shThemeFadeToGrey.css" />
+    <Content Include="css\shThemeMDUltra.css" />
+    <Content Include="css\shThemeMidnight.css" />
+    <Content Include="css\shThemeRDark.css" />
+    <Content Include="HtmlPageJsExercises.html" />
     <Content Include="img\header.jpg" />
+    <Content Include="img\New folder\IMG_1165.JPG" />
+    <Content Include="img\New folder\IMG_1166.JPG" />
+    <Content Include="img\New folder\IMG_1167.JPG" />
+    <Content Include="img\New folder\IMG_1168.JPG" />
+    <Content Include="img\New folder\IMG_1169.JPG" />
+    <Content Include="img\New folder\IMG_1170.JPG" />
+    <Content Include="img\portfolio\thumbnails\IMG_1165.JPG" />
     <Content Include="img\portfolio\fullsize\1.jpg" />
     <Content Include="img\portfolio\fullsize\2.jpg" />
     <Content Include="img\portfolio\fullsize\3.jpg" />
@@ -84,8 +109,37 @@
     <Content Include="img\portfolio\thumbnails\5.jpg" />
     <Content Include="img\portfolio\thumbnails\6.jpg" />
     <Content Include="index.html" />
+    <Content Include="JavaScriptExercises.js" />
     <Content Include="js\creative.js" />
     <Content Include="js\creative.min.js" />
+    <Content Include="js\shAutoloader.js" />
+    <Content Include="js\shBrushAppleScript.js" />
+    <Content Include="js\shBrushAS3.js" />
+    <Content Include="js\shBrushBash.js" />
+    <Content Include="js\shBrushColdFusion.js" />
+    <Content Include="js\shBrushCpp.js" />
+    <Content Include="js\shBrushCSharp.js" />
+    <Content Include="js\shBrushCss.js" />
+    <Content Include="js\shBrushDelphi.js" />
+    <Content Include="js\shBrushDiff.js" />
+    <Content Include="js\shBrushErlang.js" />
+    <Content Include="js\shBrushGroovy.js" />
+    <Content Include="js\shBrushJava.js" />
+    <Content Include="js\shBrushJavaFX.js" />
+    <Content Include="js\shBrushJScript.js" />
+    <Content Include="js\shBrushPerl.js" />
+    <Content Include="js\shBrushPhp.js" />
+    <Content Include="js\shBrushPlain.js" />
+    <Content Include="js\shBrushPowerShell.js" />
+    <Content Include="js\shBrushPython.js" />
+    <Content Include="js\shBrushRuby.js" />
+    <Content Include="js\shBrushSass.js" />
+    <Content Include="js\shBrushScala.js" />
+    <Content Include="js\shBrushSql.js" />
+    <Content Include="js\shBrushVb.js" />
+    <Content Include="js\shBrushXml.js" />
+    <Content Include="js\shCore.js" />
+    <Content Include="js\shLegacy.js" />
     <Content Include="packages.config" />
     <Content Include="less\creative.less" />
     <Content Include="less\mixins.less" />
@@ -155,7 +209,9 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="New folder\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
