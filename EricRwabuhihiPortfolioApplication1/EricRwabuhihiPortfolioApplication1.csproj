@@ -108,7 +108,8 @@
     <Content Include="img\portfolio\thumbnails\4.jpg" />
     <Content Include="img\portfolio\thumbnails\5.jpg" />
     <Content Include="img\portfolio\thumbnails\6.jpg" />
-    <Content Include="IMG_1181.JPG" />
+    <Content Include="img\portfolio\thumbnails\IMG_1181.JPG" />
+    <Content Include="IMG_1182.JPG" />
     <Content Include="index.html" />
     <Content Include="js\creative.js" />
     <Content Include="js\creative.min.js" />
