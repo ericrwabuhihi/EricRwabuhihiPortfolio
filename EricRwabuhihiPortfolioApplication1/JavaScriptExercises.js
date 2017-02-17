@@ -54,6 +54,7 @@ $(document).ready(function () {
     function exercise2() {
 
         var factorialInput = $("#factorial-input").val();
+
         console.log(factorialInput);
         var input = parseInt(factorialInput);
         var result = input;

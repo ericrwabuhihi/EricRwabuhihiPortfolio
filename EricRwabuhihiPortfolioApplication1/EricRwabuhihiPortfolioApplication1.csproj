@@ -87,7 +87,7 @@
     <Content Include="css\shThemeMDUltra.css" />
     <Content Include="css\shThemeMidnight.css" />
     <Content Include="css\shThemeRDark.css" />
-    <Content Include="HtmlPageJsExercises.html" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="img\header.jpg" />
     <Content Include="img\New folder\IMG_1165.JPG" />
     <Content Include="img\New folder\IMG_1166.JPG" />
@@ -181,6 +181,7 @@
     <Content Include="vendor\font-awesome\scss\_screen-reader.scss" />
     <Content Include="vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="vendor\font-awesome\scss\_variables.scss" />
+    <None Include="Properties\PublishProfiles\EricRwabuhihiPortfolioApplication - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

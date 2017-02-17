@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+
+</head>
+<body>
+
+    <div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#stats">Simple statistics</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#factorial"></button>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 input">
+                <h4>
+                    Task: Define a function that takes 5 numbers as arguments and returns the least, <br />greatest, mean,product and sum
+                </h4>
+                <br />
+                <p>Insert any number below the box!</p>
+                <input type="number" id="number1" />
+                <br>
+                <input type="number" id="number2" />
+                <br>
+                <input type="number" id="number3" />
+                <br>
+                <input type="number" id="number4" />
+                <br>
+                <input type="number" id="number5" />
+                <br>
+                <button id="exercise1">Calculate!</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 output">
+        <h4>Statistics</h4>
+        <p id="least"> Least </p>
+        <p id="greatest"> Greatest </p>
+        <p id="sum"> Sum </p>
+        <p id="mean"> Mean </p>
+        <p id="product"> Product </p>
+    </div>
+    <div>
+        <h4>
+            Task: Write a function that calculates the factorial of a number<br />
+            The factorial of a non-negative interger n, denoted by n!,<br />
+            is the product of all positive integers less than or equal to n. (i.e. 5! = 5 x 4 x 3 x 2 x 1 = 120)
+        </h4>
+        <p>Insert any number to get the factorial </p>
+        <input type="number" id="factorialInput" />
+        <button id="calculateFactorial">Calculate!</button>
+        <p id="factorialOutput"> Result:  </p>
+    </div>
+    <div>
+        <h4>
+            Task: Define a function palindrome() that computes the reversal of a string, returning palindrome<br />
+            if the string is a palindrome (the same forwards and backwards), and none palindrome otherwise.
+        </h4>
+        <p>Type any number to check if it is a palindrome</p>
+        <input type="text" id="isPalindrome" />
+        <button id="hello">check!</button>
+        <p id="Palindrome"> </p>
+    </div>
+    <div>
+        <p>
+            Task: Write a program that iterates the integers from 1 to 100, printing the numbers to the screen.<br />
+            For each number that is a multiple of 3, however, print "Fizz" instead of the number. For multiples of 5 print "Buzz" <br />
+            instead of the number.For numbers that are multiples of both print "FizzBuzz."
+        </p>
+        <h4>FizzBuzz checker</h4>
+        <input type="number" id="moon1" />
+        <input type="number" id="moon2" />
+        <button id="kip">check</button>
+        <p id="hit"><b>FizzBuzz:</b> </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.js"
+            integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+            crossorigin="anonymous"></script>
+
+
+    <script src="JavaScript.js"></script>
+
+
+
+
+</body>
+</html>
