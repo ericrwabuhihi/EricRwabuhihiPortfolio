@@ -89,12 +89,12 @@
     <Content Include="css\shThemeRDark.css" />
     <Content Include="HtmlPage1.html" />
     <Content Include="img\header.jpg" />
-    <Content Include="img\New folder\IMG_1165.JPG" />
-    <Content Include="img\New folder\IMG_1166.JPG" />
-    <Content Include="img\New folder\IMG_1167.JPG" />
-    <Content Include="img\New folder\IMG_1168.JPG" />
-    <Content Include="img\New folder\IMG_1169.JPG" />
-    <Content Include="img\New folder\IMG_1170.JPG" />
+    <Content Include="img\portfolio\IMG_1165.JPG" />
+    <Content Include="img\portfolio\thumbnails\IMG_1166.JPG" />
+    <Content Include="img\portfolio\thumbnails\IMG_1167.JPG" />
+    <Content Include="img\portfolio\thumbnails\IMG_1168.JPG" />
+    <Content Include="img\portfolio\thumbnails\IMG_1169.JPG" />
+    <Content Include="img\portfolio\thumbnails\IMG_1170.JPG" />
     <Content Include="img\portfolio\thumbnails\IMG_1165.JPG" />
     <Content Include="img\portfolio\fullsize\1.jpg" />
     <Content Include="img\portfolio\fullsize\2.jpg" />
@@ -109,7 +109,6 @@
     <Content Include="img\portfolio\thumbnails\5.jpg" />
     <Content Include="img\portfolio\thumbnails\6.jpg" />
     <Content Include="index.html" />
-    <Content Include="JavaScriptExercises.js" />
     <Content Include="js\creative.js" />
     <Content Include="js\creative.min.js" />
     <Content Include="js\shAutoloader.js" />
@@ -211,6 +210,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="img\New folder\" />
     <Folder Include="New folder\" />
   </ItemGroup>
   <PropertyGroup>
