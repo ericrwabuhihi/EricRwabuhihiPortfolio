@@ -16,7 +16,8 @@
 
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!--<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+    <link href="font-awesome-4/css/font-awesome.min.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
@@ -25,17 +26,14 @@
 
     <!-- Theme CSS -->
     <link href="css/creative.min.css" rel="stylesheet">
-    <link href="JavaScriptStyleSheet.css" rel="stylesheet" />
-    <link href="bootstrap.min.css" rel="stylesheet" />
-
+    <!--<link href="JavaScriptStyleSheet.css" rel="stylesheet" />-->
+    <!--<link href="bootstrap.min.css" rel="stylesheet" />-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-
     <script type="text/javascript" src="js/shCore.js"></script>
 
     <!--
@@ -47,7 +45,26 @@
     <!-- Include *at least* the core style and default theme -->
     <link href="css/shCore.css" rel="stylesheet" type="text/css" />
     <link href="css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+    <style>
+        .modal {
+            text-align: center;
+        }
 
+        @media screen and (min-width: 768px) {
+            .modal:before {
+                display: inline-block;
+                vertical-align: middle;
+                content: " ";
+                height: 100%;
+            }
+        }
+
+        .modal-dialog {
+            display: inline-block;
+            text-align: left;
+            vertical-align: middle;
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -69,19 +86,28 @@
                     <li>
                         <a class="page-scroll" href="#skills">Skills</a>
                     </li>
+
                     <li>
+                        <a href="Eric Rwabuhihi.pdf">Resume</a>
+
+                    </li>
+                    <!--<li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    <li>-->
+                        
+
+                        <!--<li>
+                            <a href="HtmlPage1.html">JSexercises</a>
+
+                        </li>-->
+
                     <li>
-
-                        <a href="HtmlPage1.html">JSexercises</a>
-
+                        <a class="page-scroll" href="#javaScriptExercise">JS Exercises</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#javaScriptExercise">JS Modal</a>
-                    </li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -93,7 +119,7 @@
             <div class="header-content-inner">
                 <h1 id="homeHeading">Welcome to my portfolio</h1>
                 <hr>
-                <p>Thoughtful, hands-on leader with strong skills in both C#, JavaScript, and project management. Also have technological skills in .NET and MVC. And used Visual Studio and SQL as tools to make things</p>
+                <p>Thoughtful, hands-on leader with strong skills in both C#, JavaScript,Html, CSS3 and project management. Also have technological skills in .NET and MVC. And used Visual Studio and SQL as tools to make applications</p>
 
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
@@ -103,15 +129,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Other experience!</h2>
+                    <h2 class="section-heading">Professional Exeprience</h2>
                     <hr class="light">
                     <p class="text-faded">
-                        Beside coding and programing, I have worked for international development organizations designing and developping budgets and managing projects.
-                        For three years, I worked for State of Vermont as Tax Examiner reviewing both business and income tax returns. During this time, I worked closely with
-                        Fast Enterprise staff who were designing tax software for the department and this is where my conding and program interest started.
-                        I also worked in the health care system where I managed a medical practice in the state of New Hampshire.
-                        Beside computer languages, I also speak human four languages including French, English, Kinyarwanda and Swahili.
-                    </p>
+                        <em>Web Applications created</em><br />
+                        <div class="col-md-offset-1">
+                            <ul style="text-align:left">
+                                <li>
+                                    A personal portfolio and blog websites using C#, MVC5 and JavaScript.
+                                </li>
+                                <li>
+                                    A bug tracker web application with enhanced security and file uploading features.
+                                </li>
+                                <li>
+                                    A fully functional financial portal web application using .NET MVC framework.
+                                </li>
+                                <!--<li>
+                                    A mobile vehicle information application using Xamarin.<br />
+                                    Accessed NHTSA's car recalls database using WebAPI2. Included images using Bing's Cognitive Image search API.Accessed NHTSA's car recalls database using WebAPI2. <br /> Included images using Bing's Cognitive Image search API.
+                                </li>-->
+                            </ul>
+                        </div>
+
+                    <p>For more details, check my resume.</p>
+
                     <a href="#skills" class="page-scroll btn btn-default btn-xl sr-button">skills!</a>
                 </div>
             </div>
@@ -131,34 +172,37 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                        <i style="font-size:32px" class="fa fa-code" aria-hidden="true"></i>
                         <h3>Languages</h3>
-                        <p class="text-muted">C#, JavaScript, HTML5 and CSS</p>
+                        <p class="text-muted">
+                            HTML5, CSS3, JavaScript  Bootstrap .NET C# MVC
+                        </p><hr />
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                        <i style="font-size:32px" class="fa fa-wrench" aria-hidden="true"></i>
                         <h3>Tools</h3>
                         <p class="text-muted">
-                            Visual and SQL Server</p>
+                            ASP.NET, SQL SERVER, LINQ, Xamarin, WebAPI and JQuery
+                        </p><hr />
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                        <i style="font-size:32px" class="fa fa-mobile" aria-hidden="true"></i>
                         <h3>Technologies</h3>
-                        <p class="text-muted">.NET and MVC</p>
+                        <p class="text-muted">.NET FRAMEWORK and MVC</p><hr />
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        <i style="font-size:32px" class="fa fa-graduation-cap" aria-hidden="true"></i>
                         <h3>Education</h3>
                         <p class="text-muted">
-                            Coder Foundry, 2015 <hr />
-                            Masters Degree in Science in Management, SIT Graduate Institute, Vermont 2010<hr />
-                            BA in Business and Administration, School of Finance and Banking, Rwanda 2007<hr />
+                            Coder Foundry, 2017 <hr />
+                            <!--Masters Degree in Science in Management, SIT Graduate Institute, Vermont 2010<hr />
+                            BA in Business and Administration, School of Finance and Banking, Rwanda 2007<hr />-->
                         </p>
                     </div>
                 </div>
@@ -173,30 +217,60 @@
                     <h2 class="section-heading">Basics</h2>
                     <hr class="light">
                     <p class="text-faded">
-                      Good coding starts with getting your hands on, have your muscle memory on coding! Below are the JavaScript functions written for my Coder Foundry class perform and perfom some tasks.
-                      Below is how each one is written
+                        Good coding starts with getting your hands on, have your muscle memory on coding! Below are the JavaScript functions written for my Coder Foundry class perform and perfom some tasks.
+                        Below is how each one is written
                     </p>
-                    <a href="#javascriptExercise" class="page-scroll btn btn-default btn-xl sr-button">Codes are below!</a>
                 </div>
             </div>
         </div>
     </section>
+    <div class="text-center" style="padding-top:20px">
+        <a href="#javascriptExercise" class="page-scroll btn btn-info btn-xl"> Java Script!</a>
+    </div>
+    <section id="javascriptExercise">
+        <div class="">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-2">
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Exercise 1:Statistics</button>
+                    <div class="modal fade" id="myModal1" role="dialog">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="modal-content container">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Statistics</h4>
+                                </div>
+                                <div class="modal1-body">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p>
+                                                Task: Define a function that takes 5 numbers as arguments and returns the least, <br />greatest, mean,product and sum
+                                            </p>
+                                            <br />
+                                            <p>Insert any number below the box!</p>
+                                            <input type="number" id="number1" />
+                                            <br>
+                                            <input type="number" id="number2" />
+                                            <br>
+                                            <input type="number" id="number3" />
+                                            <br>
+                                            <input type="number" id="number4" />
+                                            <br>
+                                            <input type="number" id="number5" />
+                                            <br>
+                                            <button id="exercise1">Calculate!</button>
+                                            <p>
 
-
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">JavaScript Exercise1: Various</button>
-
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">JavaScript Exercises</h4>
-                </div>
-                <div class="modal-body">
-                </div>
-                <p>Function determining the least, greatest, mean, sum and product.</p>
-                <pre class="brush: js">
+                                            </p>
+                                            <h4>Statistics</h4>
+                                            <p id="least"> Least </p>
+                                            <p id="greatest"> Greatest </p>
+                                            <p id="sum"> Sum </p>
+                                            <p id="mean"> Mean </p>
+                                            <p id="product"> Product </p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <pre class="brush: js">
  
     function exercise1() {
         var number1 = parseInt($("#number1").val());
@@ -219,30 +293,42 @@
     $("#exercise1").click(exercise1);
                          
                          </pre>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">JavaScript:Factorial number</button>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Exercise 2:Factorial Number</button>
+                    <div class="modal fade" id="myModal3" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <!-- Modal content-->
+                            <div class="modal-content container">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Factorial Number</h4>
+                                </div>
+                                <div class="modal3-body">
 
-    <div class="modal fade" id="myModal1" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Factorial Exercise</h4>
-                </div>
-                <div class="modal2-body">
-                </div>
-                <p>
-                    Task: Write a function that calculates the factorial of a number. The factorial of a non-negative interger n,
-                    denoted by n!, is the product of all positive integers less than or equal to n. (i.e. 5! = 5 x 4 x 3 x 2 x 1 = 120)
-                </p>
-                <pre class="brush: js">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p>
+                                                Task: Write a function that calculates the factorial of a number. The factorial of a non-negative interger n,
+                                                denoted by n!, is the product of all positive integers less than or equal to n. (i.e. 5! = 5 x 4 x 3 x 2 x 1 = 120)
+                                            </p>
+
+                                            <p>Insert any number to get the factorial </p>
+                                            <input type="number" id="factorialInput" />
+                                            <button id="calculateFactorial">Calculate!</button>
+                                            <p id="factorialOutput"> Result:  </p>
+                                        </div>
+                                        <div class="col-sm-6">
+
+                                            <pre class="brush: js">
         function exercise2() {
         var factorialInput = $("#factorial-input").val();
         console.log(factorialInput);
@@ -255,78 +341,106 @@
         $("#result").append(result);
     }
     $("#exercise2").click(exercise2);
-     </pre>
+                     </pre>
 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">JavaScript:FIZZBUZZ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="modal fade" id="myModal2" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">FizzBuzz Exercise</h4>
-                </div>
-                <div class="modal3-body">
-                </div>
-                <p>
-                    Task: Write a program that iterates the integers from 1 to 100, printing the numbers to the screen.
-                    For each number that is a multiple of 3, however, print "Fizz" instead of the number. For multiples of 5 print "Buzz" instead of the number.
-                    For numbers that are multiples of both print "FizzBuzz."
-                </p>
-                <pre class="brush: js">
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Exercise 3:FIZZBUZZ</button>
+                    <div class="modal fade" id="myModal2" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <!-- Modal content-->
+                            <div class="modal-content container">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">FizzBuzz Exercise</h4>
+                                </div>
+                                <div class="modal3-body">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p>
+                                                Task: Write a program that iterates the integers from 1 to 100, printing the numbers to the screen.<br />
+                                                For each number that is a multiple of 3, however, print "Fizz" instead of the number. For multiples of 5 print "Buzz" <br />
+                                                instead of the number.For numbers that are multiples of both print "FizzBuzz."
+                                            </p>
+                                            <h4>FizzBuzz checker</h4>
+                                            <input type="number" id="moon1" />
+                                            <input type="number" id="moon2" />
+                                            <button id="kip">check</button>
+                                            <p id="hit"><b>FizzBuzz:</b> </p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <pre class="brush: js">
                                            
         function exercise3() {
-        var numberI = $("#numberI").val();
-        var numberII = $("#numberII").val();
-        for (i = 1; i <= 100; i++) {
-        if (i % $("#numberI").val() === 0 && i % $("#numberII").val() === 0) {
-          $("#result").append('fizzbuzz<br />');
-         }
-         else if (i % $("#numberI").val() === 0) {
-                $("#result").append('fizz <br />');
+            var numberI = $("#numberI").val();
+            var numberII = $("#numberII").val();
+            for (i = 1; i <= 100; i++) {
+                if (i % $("#numberI").val() === 0 && i % 
+                    $("#numberII").val() === 0)
+                {
+                  $("#result").append('fizzbuzz<br />');
+                }
+                else if (i % $("#numberI").val() === 0) {
+                    $("#result").append('fizz <br />');
+                }
+                else if (i % $("#numberII").val() === 0) {
+                    $("#result").append('buzz <br />');
+                }
+                else {
+                    $("#result").append('<br />' + i + '<br />')
+                }
             }
-            else if (i % $("#numberII").val() === 0) {
-                $("#result").append('buzz <br />');
-            }
-            else {
-                $("#result").append('<br />' + i + '<br />')
-            }
-            }
-            }
-    $("#exercise3").click(exercise3);
+       }
+       $("#exercise3").click(exercise3);
                          </pre>
 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">JavaScript:Palindrome</button>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="modal fade" id="myModal4" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal4-title">Palindrome exercise</h4>
-                </div>
-                <div class="modal-body">
-                </div>
-                <p>
-                    Task: Define a function palindrome() that computes the reversal of a string,
-                    returning true if the string is a palindrome (the same forwards and backwards), and false otherwise..
-                </p>
-                <pre class="brush: js">
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Exercise 5:Palindrome</button>
+                    <div class="modal fade" id="myModal4" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <!-- Modal content-->
+                            <div class="modal-content container">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal4-title">Palindrome exercise</h4>
+                                </div>
+                                <div class="modal3-body">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+
+                                            <p>
+
+                                                Task: Define a function palindrome() that computes the reversal of a string, returning palindrome<br />
+                                                if the string is a palindrome (the same forwards and backwards), and none palindrome otherwise.
+                                            </p>
+
+                                            <h4>Type any number to check if it is a palindrome</h4>
+                                            <input type="text" id="isPalindrome" />
+                                            <button id="hello">check!</button>
+                                            <p id="Palindrome"> </p>
+                                        </div>
+
+
+                                        <div class="col-lg-4 col-sm-6">
+                                            <pre class="brush: js">
         
            function checkPalindrom() {
            var word = $("#word").val();
@@ -335,117 +449,127 @@
            $("#result3").append("<p>" + word + " is palindrome</p>");
             }
           else {
-            $("#result3").append("<p>" + wordR + " is not  palindrome</p>");
+            $("#result3").append("<p>" + wordR +  "is not  palindrome</p>");
             }
            }
           $("#magic").click(checkPalindrom);
           });
                          </pre>
 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-    <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/IMG_1181.JPG" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/IMG_1181.JPG" class="img-responsive" alt=""> />
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    JavaScript Exercises
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/IMG_1181.JPG" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/IMG_1181.JPG" class="img-responsive" alt=""> />
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    JavaScript Exercise
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/IMG_1165.JPG" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/computer4.JPG" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Project #1
+                                </div>
+                                <div class="project-name">
+                                    Blog
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/IMG_1166.JPG" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/computer4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Project #2
+                                </div>
+                                <div class="project-name">
+                                    Bug Tracker
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/IMG_1182.JPG" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/computer4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    PROJECT #3
+                                </div>
+                                <div class="project-name">
+                                    http://ericrwabuhihiportfolioapplication.azurewebsites.net/
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--<div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/IMG_1182.JPG" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/computer5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/IMG_1182.JPG" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/computer5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/IMG_1182.JPG" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/computer5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>-->
+
+            </div>
+        </div>
+
+    </section>
+
     <aside class="bg-dark">
         <div class="container text-center">
             <!--<div class="call-to-action">
@@ -461,11 +585,11 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
                     <hr class="primary">
-                    <p>I am ready to work.Please give me a call or send us an email and I will get back to you as soon as possible!</p>
+                    <p>I am ready to work.Please give me a call or send an email and I will get back to you within 24 hours </p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>802-595-1078</p>
+                    <p>802-552-0090</p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
@@ -485,11 +609,12 @@
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
-    <script src="JavaScriptExercises.js"></script>
+    <!--<script src="JavaScriptExercises.js"></script>-->
+    <script src="JavaScript.js"></script>
 
     <!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
     <script type="text/javascript">
-     SyntaxHighlighter.all()
+        SyntaxHighlighter.all({ 'gutter': false })
     </script>
 </body>
 
